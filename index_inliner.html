@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-family: sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;font-size: 10px;-webkit-tap-highlight-color: rgba(0,0,0,0);">
+  <head style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+    <meta charset="utf-8" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+    <meta name="viewport" content="width=device-width, initial-scale=1" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Architas Email</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+    <style type="text/css" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+
+      /* Generic styles*/
+
+ .clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: #323f49;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 300;
+    font-family: arial, sans-serif;
+    background-color: #ccc;
+}
+
+.email_background{
+    background-color: #ccc;
+    padding: 20px;
+    margin: 0;
+}
+
+.email_container{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    font-family: arial, sans-serif;
+    overflow: hidden;
+    padding: 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.header{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 0.7em;
+    color: #777;
+}
+
+.legal{
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 1.4em;
+}
+
+.browser{
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.banner{
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #0e4d63;
+}
+
+.name{
+    margin: 5px 0px 20px 0px;
+}
+
+.cta1{
+    font-size: 1.5em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #fdc722;
+    background-color: #323f49;
+    max-width: 500px;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 1.3em;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.amImage{
+    width: 15%;
+    float: left;
+    padding-top: 20px;
+}
+
+.amText{
+    width: 85%;
+    float: right;
+    padding-left: 3%;
+}
+
+h3{
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.first{
+    margin-top: 20px;
+}
+
+.cta{
+    background-color: #323f49;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.event{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul li{
+    list-style-type: none;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+.am{
+    margin-bottom: 10px;
+}
+
+.badge{
+  background-color: #323f49;
+  padding: 6px;
+  color: #fdc722;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.badge:first-of-type{
+    margin-top: 20px;
+}
+
+.center{
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4em;
+}
+
+.btn{
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    border: none;
+}
+
+.btn a{
+    color: #323f49;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #fdc722;
+    display: block;
+    padding: 7px 0px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.btn a:hover{
+    color: #fdc722;
+    line-height: 30px;
+    background-color: #323f49;
+}
+
+p.footer{
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.address{
+    font-size: 0.8em;
+    line-height: 1.2em;
+    color: #777;
+}
+
+.logo{
+    background-color: #323f49;
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 20px;
+    height: 70px;
+}
+
+.logo img{
+    width: 55%;
+    float: right;
+}
+
+.small{
+    color: #777;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+
+    </style>
+  </head>
+  <body style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0;font-family: arial, sans-serif;font-size: 16px;line-height: 21px;color: #323f49;background-color: #ccc;font-weight: 300;">
+      <div class="email_background" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background-color: #ccc;padding: 20px;margin: 0;">
+
+        <div class="header clearfix" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 500px;margin: 0 auto;font-size: 0.7em;color: #777;">
+          <div class="legal" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;width: 50%;float: left;text-align: left;padding-left: 10px;line-height: 1.4em;">
+           <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">This email is for<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">financial adviser use only</p>
+           </div> <!-- End of legal -->
+          <div class="browser" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;width: 50%;float: right;text-align: right;padding-right: 10px;">
+           <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">View in browser</p>
+           </div> <!-- End of browser -->
+        </div> <!-- End of pre header div -->
+
+          <div class="banner" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0 auto;max-width: 500px;background-color: #0e4d63;">
+            <img src="images/banner.jpg" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;border: 0;vertical-align: middle;page-break-inside: avoid;max-width: 100%!important;">
+          </div> <!-- End of banner div -->
+          <div class="email_container" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 500px;margin: 0 auto;background-color: #f5f5f5;font-family: arial, sans-serif;overflow: hidden;padding: 20px;">
+          <p class="name" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 5px 0px 20px 0px;">Dear Emma</p>
+          <h2 style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;page-break-after: avoid;font-family: inherit;font-weight: 500;line-height: 1.2em;color: inherit;margin-top: 20px;margin-bottom: 10px;font-size: 1.3em;text-align: center;margin: 5px 0px;">Architas are pleased to invite you to our roadshow events across the country</h2>
+        </div> <!-- End of email container -->
+
+        <p class="cta1" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 auto;font-size: 1.5em;line-height: 1.3em;text-align: center;color: #fdc722;background-color: #323f49;max-width: 500px;padding: 15px;">Understanding Architas<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">with World Market Review</p>
+
+          <div class="email_container" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 500px;margin: 0 auto;background-color: #f5f5f5;font-family: arial, sans-serif;overflow: hidden;padding: 20px;">
+          <h2 style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;page-break-after: avoid;font-family: inherit;font-weight: 500;line-height: 1.2em;color: inherit;margin-top: 20px;margin-bottom: 10px;font-size: 1.3em;text-align: center;margin: 5px 0px;">Earn 4 hours of structured<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">CPD for both events </h2>
+          <p class="first" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;margin-top: 20px;">We are delighted to invite you to join us at any of our roadshow events across the country in the coming months, commencing <b style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: 700;">12 April 2016</b>. Architas experts hit the road to showcase Architas and take you on a journey through the current market environment.</p>
+
+          <div class="am clearfix" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-bottom: 10px;">
+          <div class="amImage" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;width: 15%;float: left;padding-top: 20px;"><img src="images/9am.png" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;border: 0;vertical-align: middle;page-break-inside: avoid;max-width: 100%!important;"></div>
+
+          <h3 class="amText" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;page-break-after: avoid;font-family: inherit;font-weight: normal;line-height: 1.2em;color: inherit;margin-top: 20px;margin-bottom: 0px;font-size: 1.1em;text-align: left;width: 85%;float: right;padding-left: 3%;"><b style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: 700;">Morning session:</b> Understanding Architas<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">2.5 hours structured CPD accredited for your attendance</h3>
+
+          </div> <!-- End of 9am div -->
+
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">With the FCA’s on-going focus on centralised investment propositions and assessing suitability, we understand the need for you to perform your due diligence on our capabilities. The morning session will offer you the opportunity to conduct a comprehensive review of our proposition, investment process and risk management controls so that you are confident in our ability to manage your clients' assets.</p>
+
+
+          <div class="am clearfix" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-bottom: 10px;">
+          <div class="amImage" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;width: 15%;float: left;padding-top: 20px;"><img src="images/1pm.png" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;border: 0;vertical-align: middle;page-break-inside: avoid;max-width: 100%!important;"></div>
+          <h3 class="amText" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;page-break-after: avoid;font-family: inherit;font-weight: normal;line-height: 1.2em;color: inherit;margin-top: 20px;margin-bottom: 0px;font-size: 1.1em;text-align: left;width: 85%;float: right;padding-left: 3%;"><b style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: 700;">Afternoon session:</b> World Market Review<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">1.5 hours structured CPD accredited for your attendance</h3>
+          </div> <!-- End of 9am div -->
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">During the afternoon our experts will take you on a journey through the current market environment, what we believe to be bull and bear points, key asset classes and where we see value and opportunities and what this means for our asset allocation decisions.</p>
+          </div> <!-- End of email container -->
+          <p class="cta" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 auto;background-color: #323f49;color: #fff;text-align: center;padding: 20px;max-width: 500px;font-size: 1.1em;line-height: 1.4em;">Attend a half or full day, depending on your schedule. Each option includes lunch with the opportunity to network with colleagues from the industry.</p>
+          <div class="email_container" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 500px;margin: 0 auto;background-color: #f5f5f5;font-family: arial, sans-serif;overflow: hidden;padding: 20px;">
+          <h3 class="event" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;page-break-after: avoid;font-family: inherit;font-weight: bold;line-height: 1.2em;color: inherit;margin-top: 20px;margin-bottom: 0px;font-size: 1.1em;text-align: center;text-transform: uppercase;">Event details</h3>
+          <ul style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;margin-left: 0;padding-left: 0;">
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">12 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Jesmond Dene House, Newcastle</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">12 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Mercure Exeter Southgate Hotel, Exeter</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">13 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Tankersley Manor, Barnsley</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">14 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Hilton Birmingham Metropole, Birmingham</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">14 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">The Balmoral Hotel, Edinburgh</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">19 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">The Cheltenham Chase Hotel, Cheltenham</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">19 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Dakota Hotel, Glasgow</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">19 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Raddisson Blu, Guildford</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">20 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Bailbrook House Hotel, Bath</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">20 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">The Merchant Hotel, Belfast</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">20 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">East Sussex National, Uckfield</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">21 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Radisson Blu - Manchester</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">21 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Holiday Inn, London-Elstree</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">21 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">The Solent, Fareham</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">26 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Dunstan Hall, Norwich</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">26 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">The Copthorne Hotel, Copthorne</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">27 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Aztec Spa & Hotel, Bristol</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">27 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Best Western Ivy Hill Hotel, Chelmsford</li>
+            <li style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-type: none;margin-bottom: 9px;text-align: center;"><span class="badge" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;min-width: 10px;padding: 6px;font-size: 14px;font-weight: 700;line-height: 1;color: #fdc722;text-align: center;white-space: nowrap;vertical-align: middle;background-color: #323f49;border-radius: 10px;margin-bottom: 5px;">12 April</span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Architas Old Broad Street, London</li>
+          </ul>
+          <p class="center" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;text-align: center;margin-top: 20px;line-height: 1.4em;">Full location details are listed on our events page, simply click on the registration button below to secure your place. We hope to see you there!</p>
+          </div> <!-- End of email container -->
+          <div class="btn" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: block;padding: 0;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border: none;border-radius: 4px;max-width: 500px;margin: 0 auto;"><a href="#" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background-color: #fdc722;color: #323f49;text-decoration: none;font-size: 1.3em;text-transform: uppercase;display: block;padding: 7px 0px;line-height: 30px;font-weight: bold;">Click here to<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">register now</a></div>
+           <div class="email_container" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 500px;margin: 0 auto;background-color: #f5f5f5;font-family: arial, sans-serif;overflow: hidden;padding: 20px;">
+          <p class="footer" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;font-size: 1.1em;text-align: center;line-height: 1.4em;margin-top: 10px;margin-bottom: 25px;">Or call the Architas Broker Desk on: 020 7562 4900</p>
+          <p class="address" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;font-size: 0.8em;line-height: 1.2em;color: #777;">Kind regards,</p>
+          <p class="address" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;font-size: 0.8em;line-height: 1.2em;color: #777;">Architas
+            Broker Desk<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+            5 Old Broad Street, London, EC2N 1AD<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+            Tel: + 44 20 7562 4900<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+            Email: broker.desk@architas-mm.com<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+            www.architas-mm.com</p>
+          <p class="small" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;font-size: 0.8em;color: #777;line-height: 1.2em;">The value of an investment can fall as well as rise and is not guaranteed. Your clients could get back less than they invested. Past performance is not a guide to future performance.</p>
+          </div><!--  End of email container div -->
+          <div class="logo" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background-color: #323f49;padding: 10px;max-width: 500px;margin: 0 auto;padding-top: 20px;padding-right: 20px;height: 70px;"><img src="images/logo.png" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;border: 0;vertical-align: middle;page-break-inside: avoid;max-width: 100%!important;width: 55%;float: right;"></div>
+          <div class="email_container small" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 0.8em;max-width: 500px;margin: 0 auto;background-color: #f5f5f5;font-family: arial, sans-serif;overflow: hidden;padding: 20px;color: #777;line-height: 1.2em;">
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">AXA is a worldwide leader in financial protection and wealth management.
+          </p><p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">In the UK, one of the AXA companies is Architas Multi-Manager Limited, an investment company that provides access to other investment managers’ services through a range of multi-manager solutions, including regulated collective investment schemes. Architas Multi-Manager Limited is a company limited by shares and authorised and regulated by the Financial Conduct Authority. It is registered in England: No. 06458717. Registered Office: 5 Old Broad Street, London, EC2N 1AD.</p>
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">As part of our commitment to quality service and security, telephone calls may be recorded.</p>
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">If you no longer wish to receive our emails, unsubscribe here.</p>
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">This email communication is not encrypted or secure and it could be intercepted and read. Please do not include any personal or confidential information in any reply.</p>
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">Email transmission is not failsafe and could contain errors, as information could be intercepted, corrupted, lost, destroyed, late in arriving or incomplete as a result of the transmission process. The sender therefore does not accept liability for any errors or omissions in the contents of this message which arise as a result of email transmission.</p>
+          <p style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;orphans: 3;widows: 3;margin: 0 0 10px;">Finally, the recipient should check this email and any attachments for viruses. The AXA UK group of companies accept no liability for any damange caused by any virus transmitted by this email.</p>
+        </div><!--  End of email container div -->
+      </div> <!-- End of email background div -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></script>
+  </body>
+</html>
